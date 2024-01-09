@@ -6,6 +6,9 @@
     <title>Document</title>
   </head>
   <style>
+    body{
+      background: linear-gradient(90deg, red, blue);
+    }
     .fifty-percent {
       width: 50%;
       font-style: italic;
@@ -31,10 +34,12 @@
 
     .parent {
       border: 1px solid black;
-      width: 60rem;
-      height: 200px;
+      width: calc(100% - 100px);
+      
       background-color: black;
       position: absolute;
+      margin: 0 auto;
+      
     }
     .one {
       background-color: blue;
