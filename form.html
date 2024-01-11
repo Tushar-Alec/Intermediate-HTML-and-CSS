@@ -5,12 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
 </head>
+<style>
+    
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 100px;
+        margin-left: 525px;
+        gap: 20px;
+        border: none;
+        border-radius: 20px;
+        width: fit-content;
+        padding: 40px;
+        background-color: lightskyblue;
+    }
+    input {
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: white;
+        outline: none;
+        border: 3px solid #ddd;
+        font-size: 16px;
+    }
+    label{
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 7px;
+        border-radius: 0;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+    }
+</style>
 <body>
     <form action="" method="get">
         <div>
             <label for="name">Name</label>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name" required>
         </div>
+        <div>
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="number">Mobile No:</label>
+            <input type="phone" id="number" name="number" required>
+        </div>
+        <div>
+            <label for="age">Birth Date:</label>
+            <input type="date" id="age" name="age" required>
+        </div>
+
+        <button type="submit">Submit</button>
         
       </form>
 </body>
