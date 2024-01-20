@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    height: 100vh;
+}
+
+
+.container {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 250px 250px 250px  ;
+    grid-auto-rows: minmax(250px,auto );
+    grid-gap: 20px;
+    justify-content: center;
+
+}
+.container > div {
+    border: 1px solid blue;
+    padding: 10px;
+    text-align: center;
+    background-color: skyblue;
+    font-size: 20px;
+
+  }
