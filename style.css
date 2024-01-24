@@ -1,23 +1,29 @@
-body{
-    margin: 0;
-    height: 100vh;
-}
-
-
-.container {
-    margin: 30px;
+.grid-container {
+    resize: both;
+    overflow: auto;
     display: grid;
-    grid-template-columns: 250px 250px 250px  ;
-    grid-auto-rows: minmax(250px,auto );
-    grid-gap: 20px;
-    justify-content: center;
-
-}
-.container > div {
-    border: 1px solid blue;
-    padding: 10px;
-    text-align: center;
+    gap: 4px;
+    padding: 4px;
+    border: 1px solid grey;
     background-color: skyblue;
-    font-size: 20px;
-
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  
+  }
+  
+  .grid-item {
+    background-color: #444;
+    text-align: center;
+    color: #ddd;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    padding: 12px;
+  }
+  
+  p {
+    margin: 12px auto 24px;
+  }
+  
+  img {
+    height: 120px;
   }
